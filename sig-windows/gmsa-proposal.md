@@ -1,5 +1,25 @@
+<!--
+
+Reviewing this doc
+
+- Questions & comments
+Please feel free to put them inline as a quote attributed to yourself:
+
+> [name=Patrick Lang] This sounds great!
+
+
+- Edits & clarifications
+If it makes the doc better, go for it!
+
+
+- Change management
+I have another copy of this in my own git repo, and will be manually merging changes back into the final. I'm planning to cover questions in the main text of the article, and remove comments before taking it to other SIGs.
+
+-->
 Windows Service Accounts in Kubernetes
 ======================================
+
+**Authors**: Patrick Lang ([@patricklang](https://www.github.com/patricklang)), Ryan Puffer ([@rpsqrd](https://www.github.com/rpsqrd))
 
 
 *What is Active Directory?*
@@ -35,7 +55,7 @@ This is a workflow that's handled outside of Kubernetes until the last step. Mos
 
 Deployment should be as simple as using a Kubernetes secret, but a different property will be used that's specific to Windows. This is optional, and would only be used in machines already joined to an Active Directory domain.
 
-> TODO complete this deployment manifest.
+> [name='patricklang']TODO: Need to complete this deployment manifest after taking a closer look at APIs
 
 ``` yaml
 deployment:
